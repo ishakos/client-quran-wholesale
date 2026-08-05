@@ -79,13 +79,6 @@
         </div>
         <div class="gallery__item">
           <img
-            src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=600&q=80"
-            alt="المصاحف"
-            loading="lazy"
-          />
-        </div>
-        <div class="gallery__item">
-          <img
             src="https://images.unsplash.com/photo-1576764402988-7143f9cca90a?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="مصحف"
             loading="lazy"
@@ -205,36 +198,38 @@
 
           <!-- Delivery Method -->
           <div class="field">
-
-              <label class="field__label">
-                  طريقة التوصيل <span class="req">*</span>
-              </label>
+            <label class="field__label">
+              طريقة التوصيل <span class="req">*</span>
+            </label>
 
               <div class="delivery-options">
 
-                  <label class="delivery-option">
-                      <input
-                          type="radio"
-                          name="delivery"
-                          value="office"
-                      >
-                      <span>🏢 توصيل إلى المكتب</span>
-                  </label>
+                            <label class="delivery-card">
+                <input
+                  type="radio"
+                  name="delivery"
+                  value="office"
+                >
+                <span class="delivery-text">
+                  🏢 توصيل إلى المكتب
+                </span>
+              </label>
 
-                  <label class="delivery-option">
-                      <input
-                          type="radio"
-                          name="delivery"
-                          value="home"
-                          required
-                      >
-                      <span>🏠 توصيل إلى المنزل</span>
-                  </label>
+              <label class="delivery-card">
+                <input
+                  type="radio"
+                  name="delivery"
+                  value="home"
+                  required
+                >
+                <span class="delivery-text">
+                  🏠 توصيل إلى المنزل
+                </span>
+              </label>
 
-              </div>
+            </div>
 
-              <span class="field__error" id="deliveryErr"></span>
-
+            <span class="field__error" id="deliveryErr"></span>
           </div>
 
           <div class="order-summary">
@@ -256,7 +251,7 @@
             <strong>الإجمالي</strong>
             <strong id="totalPrice">0 دج</strong>
           </div>
-        </div>
+          </div>
 
           <!-- Submit -->
           <button type="submit" class="btn btn--gold btn--full" id="submitBtn">
