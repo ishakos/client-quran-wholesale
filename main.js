@@ -32,9 +32,7 @@ const CONFIG = {
 
   if (!sel || typeof WILAYAS === "undefined") return;
 
-  const availableWilayas = WILAYAS.filter((w) => w.home !== null || w.office !== null);
-
-  availableWilayas.forEach((w) => {
+  WILAYAS.forEach((w) => {
     const opt = document.createElement("option");
 
     opt.value = w.name;      // store the wilaya name (sent to sheet)
@@ -265,9 +263,9 @@ document.getElementById("orderForm")?.addEventListener("submit", async function 
 });
 
 const PACK_PRICES = {
-  "10 مصاحف": 1500,
-  "20 مصحف":  2800,
-  "30 مصحف":  4500,
+  "30 جزء عم": 2350,
+  "40 جزء عم": 2950,
+  "50 جزء عم": 3400,
 };
 
 function extractPrice(packString) {
