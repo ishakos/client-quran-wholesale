@@ -32,7 +32,9 @@ const CONFIG = {
 
   if (!sel || typeof WILAYAS === "undefined") return;
 
-  WILAYAS.forEach((w) => {
+  const availableWilayas = WILAYAS.filter((w) => w.home !== null || w.office !== null);
+
+  availableWilayas.forEach((w) => {
     const opt = document.createElement("option");
 
     opt.value = w.name;      // store the wilaya name (sent to sheet)
